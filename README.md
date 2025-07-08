@@ -41,11 +41,13 @@ Projeto desenvolvido durante o NLW Agents da [Rocketseat](https://github.com/Roc
 | `npx drizzle-kit generate` | Gera o schema a partir das tabelas definidas  |
 | `npx drizzle-kit migrate`  | Executa as migrações no banco de dados        |
 | `npx drizzle-kit studio`   | Visualizar dados do banco de dados localmente |
+| `npm run db:seed`          | Popula o banco de dados com dados fictícios   |
 
 ## Tecnologias Utilizadas
 
 - **Biome:** Lint, formatter e parser unificado para JS/TS.
 - **Drizzle:** ORM leve e moderno com forte tipagem para TypeScript.
+- **Drizzle Seed:** Gera dados fictícios para o banco de dados.
 - **Fastify:** Framework web rápido para Node.js.
 - **Husky:** Hooks Git para validações automáticas.
 - **PostgreSQL:** Banco de dados relacional open-source.
