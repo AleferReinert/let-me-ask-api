@@ -33,4 +33,6 @@ Desenvolvido durante o NLW Agents da [Rocketseat](https://github.com/Rocketseat)
 
 ## Tecnologias Utilizadas
 
+- **Fastify:** Framework web rápido para Node.js.
 - **TypeScript:** Um superconjunto do JavaScript que adiciona tipagem estática opcional.
+- **Zod:** Validação de esquemas com suporte a TypeScript.
