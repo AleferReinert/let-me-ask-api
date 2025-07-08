@@ -1,11 +1,11 @@
 services:
-  let-me-task-pg:
+  let-me-ask-pg:
     image: pgvector/pgvector:pg17
     environment:
       POSTGRES_USER: docker
       POSTGRES_PASSWORD: docker
-      POSTGRES_DB: let-me-task
+      POSTGRES_DB: let-me-ask
     ports:
-      - 5432:5432
+      - 5433:5432
     volumes:
       - ./docker/setup.sql:/docker-entrypoint-initdb.d/setup.sql

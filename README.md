@@ -41,9 +41,11 @@ Projeto desenvolvido durante o NLW Agents da [Rocketseat](https://github.com/Roc
 
 ## Tecnologias Utilizadas
 
-- **Biome:** Ferramenta de lint, formatter e parser unificado para projetos JavaScript/TypeScript.
+- **Biome:** Lint, formatter e parser unificado para JS/TS.
+- **Drizzle:** ORM leve e moderno com forte tipagem para TypeScript.
 - **Fastify:** Framework web rápido para Node.js.
-- **Husky:** Configuração de hooks Git para validações automáticas.
-- **TypeScript:** Um superconjunto do JavaScript que adiciona tipagem estática opcional.
-- **Ultracite:** Automatizador de convenções de commits baseado em prompts interativos.
+- **Husky:** Hooks Git para validações automáticas.
+- **PostgreSQL:** Banco de dados relacional open-source.
+- **TypeScript:** Superset do JavaScript com tipagem opcional.
+- **Ultracite:** Prompt interativo para convenções de commits.
 - **Zod:** Validação de esquemas com suporte a TypeScript.
