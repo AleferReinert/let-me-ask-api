@@ -12,7 +12,11 @@ app.register(fastifyCors, {
 app.setSerializerCompiler(serializerCompiler)
 app.setValidatorCompiler(validatorCompiler)
 
+app.get('/health', () => {
+	return { status: 'ok' }
+})
+
 app.listen({ port: env.PORT, host: '0.0.0.0' }).then(() => {
-	console.log(`\x1b[1murl:\x1b[0m \x1b[34m${env.API_URL}\x1b[0m`)
+	console.log(`\x1b[1mhealth:\x1b[0m \x1b[34m${env.API_URL}/health\x1b[0m`)
 	console.log('\x1b[32m✓ HTTP Server running!\x1b[0m')
 })
