@@ -52,5 +52,5 @@ Projeto desenvolvido durante o NLW Agents da [Rocketseat](https://github.com/Roc
 - **Husky:** Hooks Git para validações automáticas.
 - **PostgreSQL:** Banco de dados relacional open-source.
 - **TypeScript:** Superset do JavaScript com tipagem opcional.
-- **Ultracite:** Prompt interativo para convenções de commits.
+- **Ultracite:** Configurações predefinidas para o Biome.
 - **Zod:** Validação de esquemas com suporte a TypeScript.
