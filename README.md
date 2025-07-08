@@ -31,6 +31,14 @@ Desenvolvido durante o NLW Agents da [Rocketseat](https://github.com/Rocketseat)
    npm dev
    ```
 
+## Scripts disponíveis
+
+| Script          | Descrição                                 |
+| :-------------- | :---------------------------------------- |
+| `npm run start` | Inicia o servidor em ambiente de produção |
+| `npm run dev`   | Inicia o servidor de desenvolvimento      |
+| `npx tsc`       | Validação de TypeScript                   |
+
 ## Tecnologias Utilizadas
 
 - **Fastify:** Framework web rápido para Node.js.
