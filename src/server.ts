@@ -1,7 +1,10 @@
 import { fastifyCors } from '@fastify/cors'
+import fastifySwagger from '@fastify/swagger'
+import fastifySwaggerUi from '@fastify/swagger-ui'
 import 'dotenv/config'
 import { fastify } from 'fastify'
 import {
+  jsonSchemaTransform,
   serializerCompiler,
   validatorCompiler,
   type ZodTypeProvider
@@ -20,6 +23,20 @@ app.register(fastifyCors, {
 app.setSerializerCompiler(serializerCompiler)
 app.setValidatorCompiler(validatorCompiler)
 
+app.register(fastifySwagger, {
+  openapi: {
+    info: {
+      title: 'Let Me Ask - API',
+      version: '1.0.0'
+    }
+  },
+  transform: jsonSchemaTransform
+})
+
+app.register(fastifySwaggerUi, {
+  routePrefix: '/docs'
+})
+
 app.get('/health', () => {
   return 'Health ok!'
 })
@@ -29,6 +46,6 @@ app.register(createRoomRoute)
 app.register(getRoomQuestionsRoute)
 
 app.listen({ port: env.PORT, host: '0.0.0.0' }).then(() => {
-  console.log(`\x1b[1mhealth:\x1b[0m \x1b[34m${env.API_URL}/health\x1b[0m`)
+  console.log(`\x1b[1mDocs:\x1b[0m \x1b[34m${env.API_URL}/docs\x1b[0m`)
   console.log('\x1b[32m✓ HTTP Server running!\x1b[0m')
 })

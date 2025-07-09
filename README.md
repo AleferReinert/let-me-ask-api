@@ -56,6 +56,7 @@ Use o arquivo [api.http](./api.http) com a extensão REST Client do VSCode para 
 - **Fastify:** Framework web rápido para Node.js.
 - **Husky:** Hooks Git para validações automáticas.
 - **PostgreSQL:** Banco de dados relacional open-source.
+- **Swagger:** Documentação e testes de APIs.
 - **TypeScript:** Superset do JavaScript com tipagem opcional.
 - **Ultracite:** Configurações predefinidas para o Biome.
 - **Zod:** Validação de esquemas com suporte a TypeScript.
