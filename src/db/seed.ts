@@ -11,10 +11,12 @@ await seed(db, schema).refine((f) => ({
       name: f.companyName(),
       description: f.loremIpsum({ sentencesCount: 1 }),
       createAt: f.date({ maxDate: new Date(Date.now() - 1000 * 60) })
+    },
+    with: {
+      questions: 5
     }
   },
   questions: {
-    count: 5,
     columns: {
       question: f.loremIpsum({ sentencesCount: 1 }),
       answer: f.loremIpsum({ sentencesCount: 1 })
