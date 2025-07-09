@@ -9,7 +9,8 @@ export const getRoomQuestionsRoute: FastifyPluginCallbackZod = (app) => {
     '/rooms/:roomId/questions',
     {
       schema: {
-        summary: 'Retorna as perguntas de uma sala',
+        summary: 'Retorna todas as perguntas de uma sala',
+        tags: ['Perguntas'],
         params: z.object({
           roomId: z.string()
         })

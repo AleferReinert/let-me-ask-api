@@ -9,6 +9,7 @@ export const createRoomRoute: FastifyPluginCallbackZod = (app) => {
     {
       schema: {
         summary: 'Cria uma sala',
+        tags: ['Salas'],
         body: z.object({
           name: z.string().min(1),
           description: z.string().optional()

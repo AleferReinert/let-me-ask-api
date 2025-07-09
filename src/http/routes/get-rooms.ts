@@ -7,7 +7,8 @@ export const getRoomsRoute: FastifyPluginCallbackZod = (app) => {
     '/rooms',
     {
       schema: {
-        summary: 'Retorna todas as salas'
+        summary: 'Retorna todas as salas',
+        tags: ['Salas']
       }
     },
     async () => {
