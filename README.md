@@ -43,6 +43,11 @@ Projeto desenvolvido durante o NLW Agents da [Rocketseat](https://github.com/Roc
 | `npm run db:studio`   | Visualizar dados do banco de dados localmente |
 | `npm run db:seed`     | Popula o banco de dados com dados fictícios   |
 
+## Testes de API
+
+Use o arquivo [api.http](./api.http) com a extensão REST Client do VSCode para testar as rotas.
+
+
 ## Tecnologias Utilizadas
 
 - **Biome:** Lint, formatter e parser unificado para JS/TS.
