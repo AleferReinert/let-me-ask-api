@@ -15,6 +15,13 @@
       "when": 1752019956281,
       "tag": "0001_wonderful_jack_power",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752077503059,
+      "tag": "0002_eminent_cardiac",
+      "breakpoints": true
     }
   ]
 }
