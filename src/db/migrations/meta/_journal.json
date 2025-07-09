@@ -8,6 +8,13 @@
       "when": 1751983383237,
       "tag": "0000_loving_manta",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1752019956281,
+      "tag": "0001_wonderful_jack_power",
+      "breakpoints": true
     }
   ]
 }

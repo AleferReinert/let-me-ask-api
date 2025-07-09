@@ -33,15 +33,15 @@ Projeto desenvolvido durante o NLW Agents da [Rocketseat](https://github.com/Roc
 
 ## Scripts
 
-| Script                     | Descrição                                     |
-| :------------------------- | :-------------------------------------------- |
-| `npm run dev`              | Inicia o servidor de desenvolvimento          |
-| `npm run start`            | Inicia o servidor em ambiente de produção     |
-| `npx tsc`                  | Validação de TypeScript                       |
-| `npx drizzle-kit generate` | Gera o schema a partir das tabelas definidas  |
-| `npx drizzle-kit migrate`  | Executa as migrações no banco de dados        |
-| `npx drizzle-kit studio`   | Visualizar dados do banco de dados localmente |
-| `npm run db:seed`          | Popula o banco de dados com dados fictícios   |
+| Script                | Descrição                                     |
+| :-------------------- | :-------------------------------------------- |
+| `npm run dev`         | Inicia o servidor de desenvolvimento          |
+| `npm run start`       | Inicia o servidor em ambiente de produção     |
+| `npx tsc`             | Validação de TypeScript                       |
+| `npm run db:generate` | Gera o schema a partir das tabelas definidas  |
+| `npm run db:migrate`  | Executa as migrações no banco de dados        |
+| `npm run db:studio`   | Visualizar dados do banco de dados localmente |
+| `npm run db:seed`     | Popula o banco de dados com dados fictícios   |
 
 ## Tecnologias Utilizadas
 

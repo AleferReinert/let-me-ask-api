@@ -1,4 +1,7 @@
+import { config } from 'dotenv'
 import z from 'zod'
+
+config()
 
 const eventSchema = z.object({
   API_URL: z.string().url().default('http://localhost:3333'),
