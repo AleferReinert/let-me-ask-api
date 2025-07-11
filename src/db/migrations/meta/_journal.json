@@ -22,6 +22,13 @@
       "when": 1752077503059,
       "tag": "0002_eminent_cardiac",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1752262830158,
+      "tag": "0003_solid_colossus",
+      "breakpoints": true
     }
   ]
 }

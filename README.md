@@ -54,6 +54,7 @@ Use o arquivo [api.http](./api.http) com a extensão REST Client do VSCode para 
 - **Drizzle:** ORM leve e moderno com forte tipagem para TypeScript.
 - **Drizzle Seed:** Gera dados fictícios para o banco de dados.
 - **Fastify:** Framework web rápido para Node.js.
+- **Gemini:** Inteligência artificial da Google.
 - **Husky:** Hooks Git para validações automáticas.
 - **PostgreSQL:** Banco de dados relacional open-source.
 - **Swagger:** Documentação e testes de APIs.

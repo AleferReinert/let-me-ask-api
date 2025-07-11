@@ -1,4 +1,5 @@
 import { fastifyCors } from '@fastify/cors'
+import { fastifyMultipart } from '@fastify/multipart'
 import fastifySwagger from '@fastify/swagger'
 import fastifySwaggerUi from '@fastify/swagger-ui'
 import 'dotenv/config'
@@ -14,6 +15,7 @@ import { createQuestionRoute } from './http/routes/create-question.ts'
 import { createRoomRoute } from './http/routes/create-room.ts'
 import { getRoomQuestionsRoute } from './http/routes/get-room-questions.ts'
 import { getRoomsRoute } from './http/routes/get-rooms.ts'
+import { uploadAudioRoute } from './http/routes/upload-audio.ts'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
@@ -23,6 +25,8 @@ app.register(fastifyCors, {
 
 app.setSerializerCompiler(serializerCompiler)
 app.setValidatorCompiler(validatorCompiler)
+
+app.register(fastifyMultipart)
 
 app.register(fastifySwagger, {
   openapi: {
@@ -46,6 +50,7 @@ app.register(getRoomsRoute)
 app.register(createRoomRoute)
 app.register(getRoomQuestionsRoute)
 app.register(createQuestionRoute)
+app.register(uploadAudioRoute)
 
 app.listen({ port: env.PORT, host: '0.0.0.0' }).then(() => {
   console.log(`\x1b[1mDocs:\x1b[0m \x1b[34m${env.API_URL}/docs\x1b[0m`)
