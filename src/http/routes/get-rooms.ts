@@ -17,14 +17,12 @@ export const getRoomsRoute: FastifyPluginCallbackZod = (app) => {
         .select({
           id: schema.rooms.id,
           name: schema.rooms.name,
+          description: schema.rooms.description,
           createdAt: schema.rooms.createdAt,
           questionsCount: count(schema.questions.id)
         })
         .from(schema.rooms)
-        .leftJoin(
-          schema.questions,
-          eq(schema.questions.roomId, schema.rooms.id)
-        )
+        .leftJoin(schema.questions, eq(schema.questions.roomId, schema.rooms.id))
         .groupBy(schema.rooms.id, schema.rooms.name, schema.rooms.createdAt)
         .orderBy(desc(schema.rooms.createdAt))
       return results
