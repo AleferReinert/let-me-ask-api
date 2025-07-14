@@ -29,6 +29,13 @@
       "when": 1752262830158,
       "tag": "0003_solid_colossus",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1752510596728,
+      "tag": "0004_rare_kabuki",
+      "breakpoints": true
     }
   ]
 }
