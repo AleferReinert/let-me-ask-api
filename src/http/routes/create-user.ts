@@ -5,7 +5,7 @@ import { schema } from '../../db/schema/index.ts'
 
 export const createUserRoute: FastifyPluginCallbackZod = (app) => {
   app.post(
-    '/users',
+    '/users/:id',
     {
       schema: {
         summary: 'Cria um usuário',
@@ -32,12 +32,13 @@ export const createUserRoute: FastifyPluginCallbackZod = (app) => {
           email,
           picture
         })
+        .onConflictDoNothing()
         .returning()
 
       const insertedUser = result[0]
 
       if (!insertedUser) {
-        throw new Error('Failed to create new user.')
+        return reply.status(200).send({ message: 'Usuário já existe', id })
       }
 
       return reply.status(201).send({ id: insertedUser.id, name: insertedUser.name })
