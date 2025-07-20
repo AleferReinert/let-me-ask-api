@@ -5,7 +5,7 @@ import { schema } from '../../db/schema/index.ts'
 
 export const createUserRoute: FastifyPluginCallbackZod = (app) => {
   app.post(
-    '/users/:id',
+    '/users',
     {
       schema: {
         summary: 'Cria um usuário',

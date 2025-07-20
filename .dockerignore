@@ -1,0 +1,15 @@
+node_modules
+.dockerignore
+Dockerfile
+docker-compose.yml
+README.md
+tsconfig.json
+package-lock.json
+.env
+.vscode
+.idea
+.git
+.gitignore
+dist
+build
+coverage
